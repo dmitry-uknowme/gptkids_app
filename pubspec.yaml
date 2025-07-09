@@ -20,6 +20,7 @@ dependencies:
   flutter_telegram_login: ^0.0.2
   mask_text_input_formatter: ^2.9.0
   json_annotation: ^4.9.0
+  msix: ^3.16.9
 
 # dependencies:
   # json_annotation: ^4.9.0
@@ -41,3 +42,10 @@ flutter:
   assets:
     - assets/images/
     - assets/images/icons/
+
+msix_config:
+  display_name: Gptkids app
+  publisher_display_name: LLC Gptkids
+  identity_name: com.gptkids.assistant
+  certificate_path: msix/gptkids_cert.pfx
+  certificate_password: 123456
