@@ -55,7 +55,7 @@ class MessageModel {
 Stream<String> messageSendStream(String activityName, String message) async* {
   final client = ApiClient.client;
   final response = await client.post<ResponseBody>(
-    '/v2/chats/$activityName/ai_message/send',
+    '/v2/chats/$activityName/ai_message/send?activity_tags=ARIEL,ARIEL_TG_BOT',
     data: {'content': message},
     options: Options(responseType: ResponseType.stream),
   );

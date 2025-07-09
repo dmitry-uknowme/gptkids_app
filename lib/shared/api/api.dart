@@ -14,7 +14,8 @@ class ApiClient {
   static final Dio _client =
       Dio()
         // ..options.baseUrl = 'http://193.227.240.209:5000'
-        ..options.baseUrl = 'http://193.227.240.209:5000/'
+        ..options.baseUrl = 'http://ariel.gptkids.online'
+        // ..options.baseUrl = 'http://193.227.240.209:5000/'
         ..options.followRedirects = false
         ..options.validateStatus = ((status) => status != null && status < 500)
         ..interceptors.addAll([CookieManager(cookieJar), _AuthInterceptor()]);
